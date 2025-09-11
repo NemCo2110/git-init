@@ -1,0 +1,112 @@
+/* --------- Base (Mobile First: 320px) --------- */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    header {
+      background: #b22222;
+      color: white;
+      padding: 1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: clamp(1.2rem, 4vw, 2rem);
+      font-weight: bold;
+    }
+
+    .menu-toggle {
+      background: none;
+      border: none;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #8b0000;
+      margin-top: 1rem;
+    }
+
+    .nav-links a {
+      color: white;
+      padding: 0.75rem;
+      text-decoration: none;
+      display: block;
+    }
+
+    .nav-links a:hover {
+      background: #a52a2a;
+    }
+
+    main {
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(1.5rem, 6vw, 3rem);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .menu-section {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .menu-item {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .menu-item h2 {
+      font-size: clamp(1.2rem, 4vw, 1.8rem);
+      margin: 0.5rem;
+    }
+
+    .menu-item p {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      margin: 0.5rem;
+    }
+
+    /* --------- Tablet (768px+) --------- */
+    @media (min-width: 768px) {
+      .nav-links {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+      }
+
+      .menu-toggle {
+        display: none;
+      }
+
+      .menu-section {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* --------- Desktop (1024px+) --------- */
+    @media (min-width: 1024px) {
+      .menu-section {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
