@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="დავალება3.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Agency</h1>
+        <img src="./download.jpeg" class="logo" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Destinations">Destinations</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="Hero">
+        <h2>დაჯავშნეთ ახლავე</h2>
+        <button class="hero-btn">Book Now</button>
+    </section>
+
+    <section class="destinations">
+        <h2>Destinations</h2>
+        <table>
+            <tr>
+                <th>Country</th>
+                <th>City</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+                <td>Lisboa</td>
+                <td>1600</td>
+                <td>პორტუგალიის ულამაზესი დედაქალაქი</td>
+            </tr>
+            <tr>
+                <td>Greece</td>
+                <td>Thessaloniki</td>
+                <td>700</td>
+                <td>ისტორიული საბერძნეთი</td>
+            </tr>
+            <tr>
+                <td>Turkey</td>
+                <td>Antalya</td>
+                <td>1300</td>
+                <td>ულამაზესი სანაპიროები</td>
+            </tr>
+        </table>
+    </section>
+
+
+    <section id="gallery">
+        <h2>Our Gallery</h2>
+        <div class="images">
+            <img src="lisboa.jpg" alt="Lisboa">
+            <img src="saloniki.jpeg" alt="Thessaloniki">
+            <img src="istockphoto-1394926557-612x612.jpg" alt="Antalya">
+            <img src="tbilisi.jpg" alt="Tbilisi">
+        </div>
+    </section>
+
+    <section id="video">
+        <h2>იხილეთ ვიდეო</h2>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/GwbIBOaNnlE?si=jXLPSOYa3feYz6uF" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+         <form action="">
+            <label for="name">Name : </label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message :</label>
+            <textarea name="message" id="message" rows="4" required></textarea>
+        
+            <button type="submit">Submit</button> 
+        </form>
+
+    </section>
+
+        <footer>
+        <p>2025 Travel Agency</p>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">X</a>
+
+    </footer>
+
+
+</body>
+</html>

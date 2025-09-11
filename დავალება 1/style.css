@@ -1,0 +1,20 @@
+body{
+    background-color: goldenrod;
+}
+h1{
+    color: gray;
+    text-align: center;
+}
+img {
+    max-width: 20%;
+    border:black;
+    border-style:double;
+    border-width:medium;
+    border-color:crimson;
+    border-radius: 10px;
+}
+p {
+     font-size:44px;
+     font:icon;
+     font-style: italic;
+}
