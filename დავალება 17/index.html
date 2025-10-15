@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="store-container">
+        <aside class="filters">
+            <h3>ფილტრები</h3>
+            <div class="filter-group">
+                <h4>კატეგორია</h4>
+                <button class="category-btn" data-category="all">ყველა</button>
+                <button class="category-btn" data-category="electronics">ელექტრონიკა</button>
+                <button class="category-btn" data-category="books">წიგნები</button>
+                <button class="category-btn" data-category="clothing">ტანსაცმელი</button>
+            </div>
+
+            <div class="filter-group">
+                <h4>ფასი</h4>
+                <input type="number" id="min-price" placeholder="-დან">
+                <input type="number" id="max-price" placeholder="-მდე">
+                <button id="price-filter-btn">გაფილტვრა</button>
+            </div>
+        </aside>
+        <h3 class="prod">პროდუქტები</h3>
+        <main id="product-list" class="product-grid"></main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
